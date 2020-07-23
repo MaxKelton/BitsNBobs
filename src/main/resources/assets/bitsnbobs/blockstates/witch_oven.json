@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "bitsnbobs:block/witch_oven" },
+    "facing=south": { "model": "bitsnbobs:block/witch_oven", "y": 180},
+    "facing=west": { "model": "bitsnbobs:block/witch_oven", "y": 270},
+    "facing=east": { "model": "bitsnbobs:block/witch_oven", "y": 90}
+  }
+}

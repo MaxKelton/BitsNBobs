@@ -1,10 +1,12 @@
 package com.greenrazor.bitsnbobs.util;
 
 import com.greenrazor.bitsnbobs.BitsNBobs;
+import com.greenrazor.bitsnbobs.blocks.WitchOven;
 import com.greenrazor.bitsnbobs.items.NiceCrispyBacon;
 import com.greenrazor.bitsnbobs.items.PoisonApple;
 import com.greenrazor.bitsnbobs.items.RawBacon;
 import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -29,7 +31,8 @@ public class RegistryHandler {
     public static final RegistryObject<NiceCrispyBacon> NICE_CRISPY_BACON = ITEMS.register("nice_crispy_bacon", NiceCrispyBacon::new);
 
     // Blocks
-
+    public static final RegistryObject<Block> WITCH_OVEN = BLOCKS.register("witch_oven", WitchOven::new);
 
     // Block Items
+    public static final RegistryObject<Item> WITCH_OVEN_ITEM = ITEMS.register("witch_oven", () -> new BlockItem(WITCH_OVEN.get(), new Item.Properties().group(BitsNBobs.TAB)));
 }
