@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod("bitsnbobs")
 public class BitsNBobs {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "bitsnbobs";
 
     public BitsNBobs() {
