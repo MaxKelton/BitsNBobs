@@ -71,6 +71,8 @@ public class WitchOven extends Block {
                 .sound(SoundType.ANVIL)
                 .harvestLevel(0)
                 .harvestTool(ToolType.PICKAXE)
+                .setRequiresTool()
+                .setLightLevel(value -> 15)
         );
     }
 
