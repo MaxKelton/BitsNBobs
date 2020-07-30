@@ -35,6 +35,6 @@ public class BitsNBobs {
 
     public static final ItemGroup TAB = new ItemGroup("bitsNBobsTab") {
         @Override
-        public ItemStack createIcon() { return new ItemStack(RegistryHandler.NICE_CRISPY_BACON.get()); }
+        public ItemStack createIcon() { return new ItemStack(RegistryHandler.WITCH_OVEN.get()); }
     };
 }

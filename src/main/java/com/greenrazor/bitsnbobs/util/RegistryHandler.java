@@ -36,13 +36,13 @@ public class RegistryHandler {
 
     // Blocks
     public static final RegistryObject<Block> WITCH_OVEN = BLOCKS.register("witch_oven", WitchOven::new);
-    public static final RegistryObject<Block> WOOL_STAIRS = BLOCKS.register("wool_stairs",
+    public static final RegistryObject<Block> WHITE_WOOL_STAIRS = BLOCKS.register("white_wool_stairs",
             () -> new StairsBlock(() -> Blocks.WHITE_WOOL.getDefaultState(),
                     Block.Properties.create(Material.WOOL).sound(SoundType.CLOTH)));
 
     // Block Items
     public static final RegistryObject<Item> WITCH_OVEN_ITEM = ITEMS.register("witch_oven",
             () -> new BlockItem(WITCH_OVEN.get(), new Item.Properties().group(BitsNBobs.TAB)));
-    public static final RegistryObject<Item> WOOL_STAIRS_ITEM = ITEMS.register("wool_stairs",
-            () -> new BlockItem(WOOL_STAIRS.get(), new Item.Properties().group(BitsNBobs.TAB)));
+    public static final RegistryObject<Item> WHITE_WOOL_STAIRS_ITEM = ITEMS.register("white_wool_stairs",
+            () -> new BlockItem(WHITE_WOOL_STAIRS.get(), new Item.Properties().group(BitsNBobs.TAB)));
 }
